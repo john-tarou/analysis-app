@@ -1,0 +1,50 @@
+<div class="contents row">
+  <div class="container">
+    <h2>新規登録画面</h2>
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+     <div class="field">
+        <%= f.label :"氏名" %><br />
+        <%= f.email_field :name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"メールアドレス" %><br />
+        <%= f.email_field :email %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"パスワード" %>
+        <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> 文字以上)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"パスワード（確認用）" %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"会社名" %><br />
+        <%= f.email_field :company_name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"役職" %><br />
+        <%= f.email_field :position %>
+      </div>
+
+      <div class="field">
+        <%= f.label :"職種" %><br />
+        <%= f.email_field :occupation %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "新規登録" %>
+      </div>
+    <% end %>
+  </div>
+</div>
