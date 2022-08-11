@@ -6,7 +6,9 @@
 <li>全くその通りだと思う　　4</li>
 </div>
 
-<%= form_with model: @career_anchor, url: new_career_anchor_path, local: true do |f| %>
+<%= form_with model: @career_anchor, local: true do |f| %>
+  <%= render '/shared/error_messages', model: f.object %>
+
   <div>
     <%= f.label :"Q1:ある分野の専門性を高め、専門家としての自信を持って活動できるようになりたい" %><br />
     <%= f.text_field :question_1 %>
