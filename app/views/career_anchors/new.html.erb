@@ -1,0 +1,174 @@
+<h3>診断する</h3>
+<div>40の質問を読み、書かれている内容が自分にどれほど当てはまるのかを数字1〜4で評定してください<br>
+<li>全くそう思わない　　　　1</li>
+<li>あまりそう思わない　　　2</li>
+<li>そう思うことが多い　　　3</li>
+<li>全くその通りだと思う　　4</li>
+</div>
+
+<%= form_with model: @career_anchor, url: new_career_anchor_path, local: true do |f| %>
+  <div>
+    <%= f.label :"Q1:ある分野の専門性を高め、専門家としての自信を持って活動できるようになりたい" %><br />
+    <%= f.text_field :question_1 %>
+  </div>
+   <div>
+    <%= f.label :"Q2:仕事で一番充足感を感じるのは、組織、グループの人々の活動を指導・統括して成果を上げた時だ" %><br />
+    <%= f.text_field :question_2 %>
+  </div>
+  <div>
+    <%= f.label :"Q3:自分のやり方や自分のスケジュールで仕事が出来る自由な感じが夢だ" %><br />
+    <%= f.text_field :question_3 %>
+  </div>
+  <div>
+    <%= f.label :"Q4:自分で会社を起こす元となりそうなアイディアを、いつも探している" %><br />
+    <%= f.text_field :question_4 %>
+  </div>
+  <div>
+    <%= f.label :"Q5:自由と裁量より、保障と安定の方が自分にとっては大切だ" %><br />
+    <%= f.text_field :question_5 %>
+  </div>
+  <div>
+    <%= f.label :"Q6:個人的関心や家族の安定のために、妥協して能力を発揮できない仕事に就くくらいなら、組織を去るほうがましだ" %><br />
+    <%= f.text_field :question_6 %>
+  </div>
+  <div>
+    <%= f.label :"Q7:社会福祉への貢献度に満ち足りているようなキャリアを実現したい" %><br />
+    <%= f.text_field :question_7 %>
+  </div>
+  <div>
+    <%= f.label :"Q8:難しい課題に挑戦し続けることが出来るようなキャリアが夢だ" %><br />
+    <%= f.text_field :question_8 %>
+  </div>
+   <div>
+    <%= f.label :"Q9:良いキャリアだと実感できるのは、自分の能力を常に高いレベルに向上できる時だ" %><br />
+    <%= f.text_field :question_9 %>
+  </div>
+   <div>
+    <%= f.label :"Q10:組織全体の舵取りをするのが夢だ" %><br />
+    <%= f.text_field :question_10 %>
+  </div>
+    <div>
+    <%= f.label :"Q11:仕事で一番満足できるのは、自分で自由に仕事やスケジュール、手続きなどを決められることだ" %><br />
+    <%= f.text_field :question_11 %>
+  </div>
+   <div>
+    <%= f.label :"Q12:意にそぐわない配置をして雇用を脅かすような組織には、長く留まろうと思わない" %><br />
+    <%= f.text_field :question_12 %>
+  </div>
+  <div>
+    <%= f.label :"Q13:組織内で高い地位を得るより、自分自身でビジネスを始めることを考えたい" %><br />
+    <%= f.text_field :question_13 %>
+  </div>
+  <div>
+    <%= f.label :"Q14:自分の才能を活かして、誰かの役に立っていると実感したい" %><br />
+    <%= f.text_field :question_14 %>
+  </div>
+  <div>
+    <%= f.label :"Q15:困難な課題に対処し、それを克服できた時、真の達成感を感じる" %><br />
+    <%= f.text_field :question_15 %>
+  </div>
+  <div>
+    <%= f.label :"Q16:個人のニーズ、家族のニーズ、仕事のニーズをキャリア上で同時に満たすことが出来るのが夢だ" %><br />
+    <%= f.text_field :question_16 %>
+  </div>
+  <div>
+    <%= f.label :"Q17:上級管理職になるより、専門分野の部門長や技術部門の管理職になる方が魅力的だ" %><br />
+    <%= f.text_field :question_17 %>
+  </div>
+  <div>
+    <%= f.label :"Q18:自分の仕事を自分で決められる完全な自律と自由があることに魅力を感じる" %><br />
+    <%= f.text_field :question_18 %>
+  </div>
+   <div>
+    <%= f.label :"Q19:組織の中では安定と保障を実感できる仕事を求めている" %><br />
+    <%= f.text_field :question_19 %>
+  </div>
+   <div>
+    <%= f.label :"Q20:一番満足できるのは、自分の技能と努力の結果として何かを成し得た時だ" %><br />
+    <%= f.text_field :question_20 %>
+  </div>
+    <div>
+    <%= f.label :"Q21:自分が成功したと感じるのは、管理職として組織で高い地位を得た時だ" %><br />
+    <%= f.text_field :question_21 %>
+  </div>
+   <div>
+    <%= f.label :"Q22:自分の才能を発揮して世の中を良くすることが、自分のキャリを決める根本だ" %><br />
+    <%= f.text_field :question_22 %>
+  </div>
+  <div>
+    <%= f.label :"Q23:解決不可能と思われた問題を解決できた時や、
+                      全く勝ち目がないと思われたことに勝つことができた時に充足感を感じる" %><br />
+    <%= f.text_field :question_23 %>
+  </div>
+  <div>
+    <%= f.label :"Q24:自分・家族・友人・仕事の調和を保つことがキャリアの上で最も大切である" %><br />
+    <%= f.text_field :question_24 %>
+  </div>
+  <div>
+    <%= f.label :"Q25:経済的安定と雇用・身分の保障を実感できる時に仕事の満足も感じる" %><br />
+    <%= f.text_field :question_25 %>
+  </div>
+  <div>
+    <%= f.label :"Q26:自分の専門領域とかけ離れたローテーションを受けるより、組織を離れる方がましだ" %><br />
+    <%= f.text_field :question_26 %>
+  </div>
+  <div>
+    <%= f.label :"Q27:仕事と生活のバランスを取ることは、管理職として高い地位を得ることより大切だと思う" %><br />
+    <%= f.text_field :question_27 %>
+  </div>
+  <div>
+    <%= f.label :"Q28:人類と社会に真に貢献できる仕事/活動につくことが自分の夢だ" %><br />
+    <%= f.text_field :question_28 %>
+  </div>
+   <div>
+    <%= f.label :"Q29:良いキャリアだと実感できるのは、自分なりのアイディアと技能をもとにして起業するときだ" %><br />
+    <%= f.text_field :question_29 %>
+  </div>
+   <div>
+    <%= f.label :"Q30:経営幹部になることは、専門領域の部門長になるより魅力的だ" %><br />
+    <%= f.text_field :question_30 %>
+  </div>
+    <div>
+    <%= f.label :"Q31:規則と縛りがなく、自分自身のやり方で仕事をするチャンスは自分にとってとても大切だ" %><br />
+    <%= f.text_field :question_31 %>
+  </div>
+   <div>
+    <%= f.label :"Q32:問題解決能力と個人の競争力を存分に発揮できる仕事の機会を望んでいる" %><br />
+    <%= f.text_field :question_32 %>
+  </div>
+  <div>
+    <%= f.label :"Q33:自分で事業を立ち上げ、軌道に乗せていくことが夢だ" %><br />
+    <%= f.text_field :question_33 %>
+  </div>
+  <div>
+    <%= f.label :"Q34:自分が人の役に立つ力を発揮できない偉い地位に就くくらいなら、組織を去った方がましだ" %><br />
+    <%= f.text_field :question_34 %>
+  </div>
+  <div>
+    <%= f.label :"Q35:自分の持つ特別な技能と才能を活用できるとき満足感を得る" %><br />
+    <%= f.text_field :question_35 %>
+  </div>
+  <div>
+    <%= f.label :"Q36:管理職への道を閉ざしてしまうような配属を受け入れるくらいなら、会社を退職することを考える" %><br />
+    <%= f.text_field :question_36 %>
+  </div>
+  <div>
+    <%= f.label :"Q37:自分の職業人生で一番満足出来るのは、経済面・雇用面での安定を感じられる時だ" %><br />
+    <%= f.text_field :question_37 %>
+  </div>
+  <div>
+    <%= f.label :"Q38:自己決定と自己裁量が著しく制限される職場なら、その職を離れることも考える" %><br />
+    <%= f.text_field :question_38 %>
+  </div>
+   <div>
+    <%= f.label :"Q39:個人的関心と家族の問題にあまり干渉されない仕事の機会をいつも求めてきた" %><br />
+    <%= f.text_field :question_39 %>
+  </div>
+   <div>
+    <%= f.label :"Q40:自分にとって解決が困難な問題に対処することは、管理職としての高い地位を得るよりも、大切だ" %><br />
+    <%= f.text_field :question_40 %>
+  </div>
+  <div>
+    <%= f.submit "送信する" %>
+  </div>
+<% end %>
