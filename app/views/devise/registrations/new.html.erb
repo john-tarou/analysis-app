@@ -15,9 +15,9 @@
       </div>
 
       <div class="field">
-        <%= f.label :"パスワード" %>
+        <%= f.label :"パスワード" %><br>
         <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> 文字以上)</em>
+          <em>(<%= @minimum_password_length %> 文字以上かつ英字と数字の両方を含めて設定してください)</em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
