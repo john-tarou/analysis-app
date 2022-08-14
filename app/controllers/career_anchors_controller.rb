@@ -1,5 +1,9 @@
 class CareerAnchorsController < ApplicationController
 
+  def index
+    @career_anchor = CareerAnchor.all.order(created_at: :desc)
+  end
+
   def new
     @career_anchor = CareerAnchor.new
   end
@@ -7,10 +11,14 @@ class CareerAnchorsController < ApplicationController
   def create 
     @career_anchor = CareerAnchor.new(career_anchor_params)
     if @career_anchor.save
-      redirect_to root_path
+      redirect_to career_anchors_path
     else
       render :new
     end
+  end
+
+  def show
+    @career_anchor = CareerAnchor.find(params[:id])
   end
 
   private
