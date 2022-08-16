@@ -1,1 +1,24 @@
 <h1>診断結果の表示</h1>
+<% th = @career_anchor.question_1 + @career_anchor.question_9 + @career_anchor.question_17 + @career_anchor.question_26 + @career_anchor.question_35 %>
+<% gm = @career_anchor.question_2 + @career_anchor.question_10 + @career_anchor.question_21 + @career_anchor.question_30 + @career_anchor.question_36 %>
+<% au = @career_anchor.question_3 + @career_anchor.question_11 + @career_anchor.question_18 + @career_anchor.question_31 + @career_anchor.question_38 %>
+<% se = @career_anchor.question_5 + @career_anchor.question_12 + @career_anchor.question_19 + @career_anchor.question_25 + @career_anchor.question_37 %>
+<% ec = @career_anchor.question_4 + @career_anchor.question_13 + @career_anchor.question_20 + @career_anchor.question_29 + @career_anchor.question_33 %>
+<% sv = @career_anchor.question_7 + @career_anchor.question_14 + @career_anchor.question_22 + @career_anchor.question_28 + @career_anchor.question_34 %>
+<% ch = @career_anchor.question_8 + @career_anchor.question_15 + @career_anchor.question_23 + @career_anchor.question_32 + @career_anchor.question_40 %>
+<% ls = @career_anchor.question_6 + @career_anchor.question_16 + @career_anchor.question_24 + @career_anchor.question_27 + @career_anchor.question_39 %>
+<%= column_chart [["専門職務別能力", th], ["経営管理能力", gm],["自律・独立", au], ["保障・安定", se],["起業家的創造性", ec], ["奉仕・社会貢献", sv],["純粋な挑戦", ch], ["生活様式", ls]] %>
+
+<h2> あなたのタイプ<h2>
+
+
+<% tf_type = "『専門・職務別能力』"%>
+<% gm_type = "『経営管理能力』"%>
+<% au_type = "『自律・独立』"%>
+<% se_type = "『保障・安定』"%>
+<% ec_type = "『起業家的創造性』"%>
+<% sv_type = "『奉仕・社会貢献』"%>
+<% ch_type = "『純粋な挑戦』"%>
+<% ls_type = "『生活様式』"%>
+
+
