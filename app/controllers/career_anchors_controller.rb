@@ -26,6 +26,19 @@ class CareerAnchorsController < ApplicationController
     @career_anchor.destroy
   end
 
+  def edit
+    @career_anchor = CareerAnchor.find(params[:id])
+  end
+
+  def update
+     @career_anchor = CareerAnchor.find(params[:id])
+    if @career_anchor.update(career_anchor_params)
+       redirect_to career_anchors_path
+    else
+      render :edit
+    end
+  end
+
   private
   def career_anchor_params
     params.require(:career_anchor).permit(
