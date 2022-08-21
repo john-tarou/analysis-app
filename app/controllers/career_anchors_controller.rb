@@ -31,8 +31,8 @@ class CareerAnchorsController < ApplicationController
   end
 
   def update
-    if @career_anchor = CareerAnchor.find(params[:id])
-       @career_anchor.update(career_anchor_params)
+     @career_anchor = CareerAnchor.find(params[:id])
+    if @career_anchor.update(career_anchor_params)
        redirect_to career_anchors_path
     else
       render :edit
