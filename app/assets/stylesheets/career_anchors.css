@@ -9,11 +9,15 @@
 }
 
 .type{
- background-color:#9bdbf2;
+ background-color:#dcdcdc;
  margin-top: 20px;
  list-style: none;
 }
 
 .type-box{
  margin-top: 10px;
+}
+
+.type-key{
+  background-color:#9bdbf2;
 }
