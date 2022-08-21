@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+header.header div.header__bar.row {
+background-color:#9bdbf2;
+display: flex;
+height: 45px;
+align-items:center;
+justify-content: space-between;
+list-style: none;
+}
+
+header.header div.header__bar.row div.header-right2 {
+  margin-left: auto;
+  padding: 20px;
+}
+
+footer {
+  margin: 30px auto;
+  padding: 10px;
+  color: #D8D8D8;
+  height: 30px;
+}
+
+footer p {
+  text-align: center;
+}
