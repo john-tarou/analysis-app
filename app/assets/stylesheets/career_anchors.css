@@ -1,0 +1,23 @@
+.career_anchors_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.career_anchors_btn1 {
+  margin-right: 20px;
+}
+
+.type{
+ background-color:#dcdcdc;
+ margin-top: 20px;
+ list-style: none;
+}
+
+.type-box{
+ margin-top: 10px;
+}
+
+.type-key{
+  background-color:#9bdbf2;
+}
