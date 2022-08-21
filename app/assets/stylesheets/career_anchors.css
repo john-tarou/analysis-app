@@ -1,0 +1,9 @@
+.career_anchors_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.career_anchors_btn1 {
+  margin-right: 20px;
+}
