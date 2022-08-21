@@ -26,6 +26,10 @@ class CareerAnchorsController < ApplicationController
     @career_anchor.destroy
   end
 
+  def edit
+    @career_anchor = CareerAnchor.find(params[:id])
+  end
+
   private
   def career_anchor_params
     params.require(:career_anchor).permit(
