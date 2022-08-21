@@ -1,6 +1,6 @@
 <h1>診断結果の表示</h1>
-<h2><%= link_to "編集する", edit_career_anchor_path(@career_anchor.id), method: :get %></h2>
-<h2><%= link_to "削除する", career_anchor_path(@career_anchor.id), method: :delete %></h2>
+<h3><%= link_to "編集する", edit_career_anchor_path(@career_anchor.id), method: :get %></h3>
+<h3><%= link_to "削除する", career_anchor_path(@career_anchor.id), method: :delete %></h3>
 
 <% th = @career_anchor.question_1 + @career_anchor.question_9 + @career_anchor.question_17 + @career_anchor.question_26 + @career_anchor.question_35 %>
 <% gm = @career_anchor.question_2 + @career_anchor.question_10 + @career_anchor.question_21 + @career_anchor.question_30 + @career_anchor.question_36 %>
