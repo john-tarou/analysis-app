@@ -24,3 +24,7 @@ footer {
 footer p {
   text-align: center;
 }
+
+fieldset {
+  align-items:center; 
+}
