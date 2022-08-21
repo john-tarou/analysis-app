@@ -11,14 +11,27 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
-         <li><%= link_to current_user.name, "#", class: "user-name"%> </li>
-         <li><%= link_to "トップページへ", root_path%> </li>
-         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %> </li>
-      <% else %>
-        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-    <% end %>
-    <%= yield %>
+  <header class="header">
+    <div class="header__bar row">
+      <% if user_signed_in? %>
+          <li><%= link_to current_user.name, "#", class: "header-left"%> </li>
+          <div class="header-right2">
+          <li><%= link_to "トップページへ", root_path, class:"header-right2"%> </li>
+          </div>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "header-right" %> </li>
+        <% else %>
+          <div class="header-right2">
+          <li><%= link_to 'ログイン', new_user_session_path, class: "header-right2" %></li>
+          </div>
+          <li><%= link_to '新規登録', new_user_registration_path, class: "header-right" %></li>
+      <% end %>
+    </div>
+  </header>
+  <%= yield %>
+   <footer>
+      <p>
+        AnalysisApp 2022.
+      </p>
+    </footer>
   </body>
 </html>
