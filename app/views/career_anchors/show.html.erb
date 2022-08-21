@@ -53,11 +53,11 @@
     という生き方を積極的に志向します。ワークライフバランス（仕事とそれ以外の人生、つまり家庭や娯楽などでうまく
     バランスを取ろうという考え方）は、このタイプの人にとって一番大切なことです。" %>
 
-<% type = [["専門職務別能力タイプ", tf], ["経営管理能力タイプ", gm],["自律・独立タイプ", au], ["保障・安定タイプ", se],["起業家的創造性タイプ", ec], ["奉仕・社会貢献タイプ", sv],["純粋な挑戦タイプ", ch], ["生活様式タイプ", ls]]%>
+<% type = [["専門・職能別能力タイプ", tf], ["経営管理能力タイプ", gm],["自律・独立タイプ", au], ["保障・安定タイプ", se],["起業家的創造性タイプ", ec], ["奉仕・社会貢献タイプ", sv],["純粋な挑戦タイプ", ch], ["生活様式タイプ", ls]]%>
 <% type_dsc =  type.sort_by { |_, v| -v }.to_h %>
 <%= column_chart type_dsc %>
 
-<% type_dsc["専門職務別能力タイプ"] = tf_type%>
+<% type_dsc["専門・職能別能力タイプ"] = tf_type%>
 <% type_dsc["経営管理能力タイプ"] = gm_type%>
 <% type_dsc["自律・独立タイプ"] = au_type%>
 <% type_dsc["保障・安定タイプ"] = se_type%>
@@ -78,35 +78,35 @@
 
 <h2>全タイプの詳細</h2>
   <ul>
-    <li class = "type">1.専門・職種別能力(Technical/Functional Competence :TF)◆職人</li>
+    <li class = "type">1.専門・職能別能力(Technical/Functional Competence :TF)　◆職人</li>
     <div class = "type-box"> 
     <%= tf_type %>
     </div>
-    <li class = "type">2.経営管理能力(General Managerial Competence :GM)◆幹事</li>
+    <li class = "type">2.経営管理能力(General Managerial Competence :GM)　◆幹事</li>
     <div class = "type-box">
      <%= gm_type %>
     </div>
-    <li class = "type">3.自律・独立(Autonomy/Independence :AU)◆自由人</li>
+    <li class = "type">3.自律・独立(Autonomy/Independence :AU)　◆自由人</li>
     <div class = "type-box">
       <%= au_type %>
     </div>
-    <li class = "type">4.保障・安定(Security/Stability :SE)◆組織人</li>
+    <li class = "type">4.保障・安定(Security/Stability :SE)　◆組織人</li>
     <div class = "type-box">
       <%= se_type %>
     </div>
-    <li class = "type">5.起業家的創造性(Entrepreneurial Creativity :EC)◆新価値創造</li>
+    <li class = "type">5.起業家的創造性(Entrepreneurial Creativity :EC)　◆新価値創造</li>
     <div class = "type-box">
       <%= ec_type %>
     </div>
-    <li class = "type">6.奉仕・社会貢献(Service/Dedication toa Cause :SV)◆社会派</li>
+    <li class = "type">6.奉仕・社会貢献(Service/Dedication toa Cause :SV)　◆社会派</li>
     <div class = "type-box">
        <%= sv_type %>
     </div>
-    <li class = "type">7.純粋な挑戦(Pure Challenge :CH)◆チャレンジャー</li>
+    <li class = "type">7.純粋な挑戦(Pure Challenge :CH)　◆チャレンジャー</li>
     <div class = "type-box">
        <%= ch_type %>
     </div>
-    <li class = "type">8.生活様式(Lifestyle :LS)◆バランサー</li>
+    <li class = "type">8.生活様式(Lifestyle :LS)　◆バランサー</li>
     <div class = "type-box">
       <%= ls_type %>
     </div>
