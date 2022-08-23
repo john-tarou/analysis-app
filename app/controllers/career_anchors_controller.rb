@@ -1,4 +1,5 @@
 class CareerAnchorsController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :new, :edit, :destroy, :show]
 
   def index
     @career_anchor = CareerAnchor.all.order(created_at: :desc)
