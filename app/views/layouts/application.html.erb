@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__bar row">
       <% if user_signed_in? %>
-          <li><%= link_to current_user.name, "#", class: "header-left"%> </li>
+          <li><%= link_to "ようこそ #{current_user.name} さん", "#", class: "header-left"%> </li>
           <div class="header-right2">
           <li><%= link_to "トップページへ", root_path, class:"header-right2"%> </li>
           </div>
