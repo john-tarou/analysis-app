@@ -1,7 +1,10 @@
 <h1> 診断結果の表示 </h1>
 <div class ="career_anchors_btn">
-<h3 class =career_anchors_btn1><%= link_to "編集する", edit_career_anchor_path(@career_anchor.id), method: :get %></h3>
+<% if @career_anchor.user_id == current_user.id %>
+<h3 class =career_anchors_btn1>
+<%= link_to "編集する", edit_career_anchor_path(@career_anchor.id), method: :get %></h3>
 <h3><%= link_to "削除する", career_anchor_path(@career_anchor.id), method: :delete %></h3>
+<% end %>
 </div>
 
 <% tf = @career_anchor.question_1 + @career_anchor.question_9 + @career_anchor.question_17 + @career_anchor.question_26 + @career_anchor.question_35 %>
