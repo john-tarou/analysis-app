@@ -5,13 +5,13 @@
        <%= l career_anchor.created_at %>
        <%= link_to "#{career_anchor.user.name}さんの診断結果", career_anchor_path(career_anchor.id), method: :get %>
     </li> 
- <% elsif current_user.id != career_anchor.user_id %>
-    <%= "診断結果はありません" %>
-   <% break %>
-   <% elsif current_user.id == career_anchor.user_id %> 
+ <% elsif current_user.id == career_anchor.user_id %> 
     <li>
        <%= l career_anchor.created_at %>
        <%= link_to "#{career_anchor.user.name}さんの診断結果", career_anchor_path(career_anchor.id), method: :get %>
     </li> 
+   <% elsif CareerAnchor.find_by(user_id: current_user.id) == nil %>
+    <%= "診断結果はありません" %>
+   <% break %>
   <% end %>
 <% end %>
