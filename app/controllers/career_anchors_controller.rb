@@ -20,15 +20,18 @@ class CareerAnchorsController < ApplicationController
 
   def show
     @career_anchor = CareerAnchor.find(params[:id])
+    redirect_to root_path if @career_anchor.user_id != current_user.id
   end
 
   def destroy
     @career_anchor = CareerAnchor.find(params[:id])
     @career_anchor.destroy
+    redirect_to root_path if @career_anchor.user_id != current_user.id
   end
 
   def edit
     @career_anchor = CareerAnchor.find(params[:id])
+    redirect_to root_path if @career_anchor.user_id != current_user.id
   end
 
   def update
