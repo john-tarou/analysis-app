@@ -2,6 +2,9 @@ class CareerAnchor < ApplicationRecord
 
   belongs_to :user
 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  has_many :one_to_fours
+
   validates :question_1, presence: true,numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 4 }
   validates :question_2, presence: true,numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 4 }
   validates :question_3, presence: true,numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 4 }
