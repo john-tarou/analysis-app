@@ -3,7 +3,7 @@ class CareerAnchor < ApplicationRecord
   belongs_to :user
 
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :one_to_fours
+  belongs_to :one_to_four
 
   validates :question_1, presence: true,numericality: { other_than: 0, message: "can't be blank" } 
   validates :question_2, presence: true,numericality: { other_than: 0, message: "can't be blank" } 
