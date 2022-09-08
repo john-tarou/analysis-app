@@ -1,27 +1,33 @@
-# README
+# アプリケーション名
+「自己分析診断アプリ」
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+複数の質問に回答するだけで、簡易的に自己分析の診断ができます
 
-Things you may want to cover:
+# URL
+https://analysis-app-37848.herokuapp.com/
 
-* Ruby version
+## ユーザー認証コード
+- ユーザー名：johnta
+- パスワード：johnta123
 
-* System dependencies
+## 管理者用アカウント
+- メールアドレス：kanri@com
+- パスワード：kanri123
+- ユーザーID:44
 
-* Configuration
+## ユーザーアカウント
+- メールアドレス：testtest@com
+- パスワード：test123
 
-* Database creation
+# 要件定義
 
-* Database initialization
+# 実装予定の機能
+- 
+- 
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
 # テーブル設計
 
 ## users テーブル
